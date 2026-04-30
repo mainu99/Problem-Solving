@@ -1,3 +1,5 @@
+package two_sum;
+
 import java.util.*;
 
 //Hashmap, check complement exist on map, if not put value on map.
