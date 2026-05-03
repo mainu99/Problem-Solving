@@ -1,6 +1,7 @@
 package plus_one;
 
 //Link: https://leetcode.com/problems/plus-one/?envType=problem-list-v2&envId=a3j9rtxd
+//O(N)
 class Solution {
     public int[] plusOne(int[] digits) {
         int n = digits.length;
@@ -22,7 +23,9 @@ class Solution {
 /*sol: we increment from behind if digit < 9 and return. eg: 192 -> 193 and returned.
 else if it is 9 we keep setting it to 0 and again if firt condition satisfies we increment and return. eg 299 -> 300
 else if all are 9s then we set all to 0, and outside for loop we create new arr copy of len = n+1 and assign first to 0.
-eg: 999 -> 000 -> 0000 -> 1000
+eg: 999 -> 1000.
+
+Other approach: convert to num, +1, convert back. But this breaks for very large array due to int/long overflow.
  */
 public class PlusOne {
 
