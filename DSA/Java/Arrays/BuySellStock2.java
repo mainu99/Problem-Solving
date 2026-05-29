@@ -1,9 +1,9 @@
-package buy_sell_stock_2;
 //Link: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/?envType=problem-list-v2&envId=a3j9rtxd
 //O(n).
 /* Greedy Approach. Sell a stock immediately when you find larger value.*/
-class Solution {
-    public int maxProfit(int[] prices) {
+public class BuySellStock2 {
+
+    public static int maxProfit(int[] prices) {
         int n = prices.length;
         int total_profit = 0;
 
@@ -14,14 +14,11 @@ class Solution {
         }
         return total_profit;
     }
-}
-
-public class BuySellStock2 {
 
     static void main(String[] args) {
         int[] a = {7, 1, 5, 3, 6, 4};
-        Solution solution = new Solution();
-        int res = solution.maxProfit(a);
+        int res = maxProfit(a);
         System.out.println(res);
     }
+
 }

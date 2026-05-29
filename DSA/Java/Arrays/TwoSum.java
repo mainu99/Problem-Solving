@@ -1,10 +1,9 @@
-package two_sum;
-
-import java.util.*;
+import java.util.HashMap;
 
 //Hashmap, check complement exist on map, if not put value on map.
-class Solution {
-    public int[] twoSum(int[] nums, int target) {
+public class TwoSum {
+
+    public static int[] twoSum(int[] nums, int target) {
         int n = nums.length;
 
         HashMap<Integer, Integer> map = new HashMap<>();
@@ -19,13 +18,10 @@ class Solution {
         }
         return new int[] {-1, -1};
     }
-}
 
-public class TwoSum {
     static void main(String[] args) {
         int[] a = {5, 3, 2, 1};
-        Solution s = new Solution();
-        int[] result = s.twoSum(a, 5);
+        int result[] = twoSum(a, 5);
         System.out.println(result[0] + " " + result[1]);
     }
 }
